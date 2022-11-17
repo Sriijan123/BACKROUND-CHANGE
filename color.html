@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .para{
+                font-size:15px;font-family:Arial, Helvetica, sans-serif;text-align:center;color:#246dff
+            }
+            .h{
+                font-family:Arial, Helvetica, sans-serif New;text-align:center;background-color:#6be7ad
+            } 
+            button {
+                background-color: #00ffbb;
+                border: none;
+                color: black;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-size: 200px;
+            }
+            button:hover {
+                background-color: #58ff63;
+            }
+        </style>
+    
+    </head>
+    <body bgcolor="demo2">
+        <form action="/action_page.php">
+            <p>Please select your favorite color:</p>
+            <input type="radio" id="html" name="fav_language" value="red" onclick="red()">
+            <label for="html">Red</label><br>
+            <input type="radio" id="css" name="fav_language" value="blue" onclick="blue()">
+            <label for="css">Blue</label><br>
+            <input type="radio" id="html" name="fav_language" value="red" onclick="green()">
+            <label for="html">Green</label><br>
+            <input type="radio" id="css" name="fav_language" value="blue" onclick="white()">
+            <label for="css">White</label><br>
+
+        <script>
+        function white() {
+            document.body.style.backgroundColor = "white";
+        }
+        function red() {
+            document.body.style.backgroundColor = "red";
+        }
+        function blue() {
+            document.body.style.backgroundColor = "blue";
+        }
+        function green() {
+            document.body.style.backgroundColor = "green";
+        }
+        </script>
+    </body>
+</html>
